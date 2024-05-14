@@ -3,7 +3,7 @@
 ## Table of Contents:
 
 #### [1. What is Hangman?](#1-what-is-hangman)
-#### [2. The Aim of the Game](#2-the-aim-of-the-game)
+#### [2. The Aim of the Project](#2-the-aim-of-the-project)
 #### [3. Installation Instructions](#3-installation-instructions)
 #### [4. Usage instructions](#4-usage-instructions)
 #### [5. File structure of the project](#5-file-structure-of-the-project)
@@ -15,11 +15,13 @@
 
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
+This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+
 ---
 
-### The Aim of the Game
+### The Aim of the Project
 
-This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
+The aim of the project is for the user to guess a single alphabetical letter of a secret word. The computer will print "Sorry, '{guessed letter}' is not in the word. Try again." if the letter guessed is not contained in the secret word. However, if it is contained in the word, the computer will print "Good guess! '{guessed letter}' is in the word."
 
 ---
 
@@ -45,7 +47,12 @@ Once you've installed the Hangman game, follow the instructions to play:
 ### File structure of the project
 
 The file structure is as follows:
-- __hangman.py__: The main Python script containing the Hangman game logic.
+- __hangman.py__: The main Python script containing the Hangman game.
+- __.gitignore__: A text file used by Git to specify intentionally untracked files that Git should ignore.
+- __milestone_2.py__: A python file asking the user to input a single alphabetical letter.
+- __milestone_3.py__: A python file converting a guessed letter into lower case and checking if it is in a secret word.
+- __README.md__: A markdown file providing essential information about the hangman game.
+
 
 ---
 
