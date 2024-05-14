@@ -29,7 +29,7 @@ The aim of the project is for the user to guess a single alphabetical letter of 
 
 To run the Hangman game, follow these steps:
 1. Clone the repository to your local machine: __git clone https://github.com/54F-A/hangman352.git__
-2. Navigate to the project directory: __cd hangman352__
+2. Navigate to the project directory: __cd hangman__
 3. Run the game: __python hangman.py__
 
 ---
