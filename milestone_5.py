@@ -1,9 +1,8 @@
-#MILESTONE 4:
+#MILESTONE 5:
 
 import random
-from milestone_2 import list_of_fruit
 
-word_list = list_of_fruit
+word_list = ["apple", "banana", "grapes", "orange", "strawberry"]
 
 # Create a class called Hangman.
 
@@ -21,7 +20,7 @@ class Hangman:
         
         self.word_list = word_list      
         
-        self.list_of_guesses = []       
+        self.list_of_guesses = [] 
 
         # This function is an initializer method for a class.
         # Args:
@@ -45,7 +44,7 @@ class Hangman:
             print(f"Sorry, {guess} is not in the word.")
             self.num_lives -=1
             print(f"You have {self.num_lives} lives left.")
-
+    
         # This function is designed to check a guessed letter against a word the player is trying to guess. 
         # Args:
         #       str: a single alphabetical letter
@@ -76,6 +75,19 @@ class Hangman:
         #       str: "Invalid letter. Please, enter a single alphabetical character." - If the input doesn't meet the conditions.
         #       str: "You already tried that letter!" - If the input is a repeat value.
 
-hangman_game = Hangman(word_list)
-hangman_game.ask_for_input()
+def play_game(word_list):
 
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+    
+    while True:
+        if game.num_letters == 0:
+            print("Congratulations. You won the game!")
+            break
+        elif game.num_lives == 0:
+            print("You Lost!")
+            break
+        else:
+            game.ask_for_input()
+
+play_game(word_list)

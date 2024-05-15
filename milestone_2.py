@@ -1,8 +1,8 @@
-# MILESTONE 2:
+#MILESTONE 2:
 
 import random
 
-list_of_fruit = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
+list_of_fruit = ["apple", "banana", "grapes", "orange", "strawberry"]
 
 # Creates a list containing the names of your 5 favorite fruits.
 
