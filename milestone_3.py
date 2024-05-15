@@ -23,11 +23,7 @@ else:
 
 #%%
 
-# Defines a function that passes in a letter as a parameter for the function.
-
 def check_guess(guessed_letter):
-
-    # Converts the letter into lower case.
 
     guessed_letter = guessed_letter.lower()
     
@@ -36,7 +32,12 @@ def check_guess(guessed_letter):
     else:
         print(f"Sorry, '{guessed_letter}' is not in the word. Try again.")
 
-# Defines a function called ask_for_input.
+    # This function takes an input and checks if it's in the secret_word.
+    # Args:
+    #       str: a single alphabetical letter
+    # Returns:
+    #       str: "Good guess! '{guessed_letter}' is in the word." - If the letter is in the word.
+    #       str: "Sorry, '{guessed_letter}' is not in the word. Try again." - If the letter is not in the word.
 
 def ask_for_input():
 
@@ -47,7 +48,10 @@ def ask_for_input():
         else:
             print("Invalid letter. Please, enter a single alphabetical character.") 
 
-    # Calls the check_guess function to check if the letter is in the word & ask_for_input function to test your code.
+    # This function checks if the letter is single and alphabetical.
+    # Args: None
+    # Returns:
+    #       str: "Invalid letter. Please, enter a single alphabetical character." - If the input is not single or alphabetical.
 
     check_guess(guessed_letter) 
 ask_for_input() 

@@ -45,7 +45,11 @@ class Hangman:
 
         # This function is designed to check a guessed letter against a word the player is trying to guess. 
         # Args:
-        #       guess: a single alphabetical letter
+        #       str: a single alphabetical letter
+        # Returns:
+        #       str: "Good guess! '{guess}' is in the word." - If the letter is in the word.
+        #       str: "Sorry, {guess} is not in the word." - If the letter is not in the word.
+        #       str & int: "You have {self.num_lives} lives left." - If the letter is not in the word.
 
     def ask_for_input(self): 
 
@@ -62,6 +66,10 @@ class Hangman:
                 self.list_of_guesses.append(guess)
 
         # This function prompts the user to guess a letter for the word they are trying to guess.
+        # Args: None
+        # Returns:
+        #       str: "Invalid letter. Please, enter a single alphabetical character." - If the input doesn't meet the conditions.
+        #       str: "You already tried that letter!" - If the input is a repeat value.
 
 hangman_game = Hangman(word_list)
 hangman_game.ask_for_input()
