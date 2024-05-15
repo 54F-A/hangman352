@@ -24,8 +24,8 @@ class Hangman:
 
         # This function is an initializer method for a class.
         # Args:
-        #       word_list: a list of fruit.
-        #       num_lives: an integer defining the number of lives
+        #       word_list (list): a list of fruit.
+        #       num_lives (int): an integer defining the number of lives
 
     def check_guess(self, guess):
         guess = guess.lower()   
@@ -47,7 +47,7 @@ class Hangman:
     
         # This function is designed to check a guessed letter against a word the player is trying to guess. 
         # Args:
-        #       str: a single alphabetical letter
+        #       guess (str): a single alphabetical letter
         # Returns:
         #       str: "Good guess! '{guess}' is in the word." - If the letter is in the word.
         #       str: "Sorry, {guess} is not in the word." - If the letter is not in the word.
@@ -90,4 +90,15 @@ def play_game(word_list):
         else:
             game.ask_for_input()
 
+        # This function is a Python function designed to play a game of Hangman 
+        # Args:
+        #       word_list (list): a list of fruit.
+        # Local Variables:
+                # num_lives (int): This variable is set to 5, representing the number of lives.
+                # game: This variable initializes an instance of the Hangman game with the word list and the number of lives.
+        # Returns:
+        #       str: "Congratulations. You won the game!" - If all the letters of the word are found.
+        #       str: "You Lost!" - If the lives run out.
+
 play_game(word_list)
+
