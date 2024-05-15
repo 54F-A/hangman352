@@ -1,42 +1,34 @@
-# Create a while loop and set the condition to True.
-while True:
+#MILESTONE 3:
 
-# Ask the user to guess a letter and assign this to a variable called guess.
-    guess = input("Guess a letter: ")
+# Ask the user to guess a letter & check that the guess is a single alphabetical character.
 
-# Check that the guess is a single alphabetical character. 
-    if len(guess) == 1 and guess.isalpha():
+while True: 
+    guess = input("Guess a letter: ")  
 
-# If the guess passes the checks, break out of the loop.
+    if len(guess) == 1 or guess.isalpha():  
         break
-
-# If the guess does not pass the checks:
-# Print a message saying "Invalid letter. Please, enter a single alphabetical character."
     else:
         print("Invalid letter. Please, enter a single alphabetical character.")
 
 #%%
 
 # Create an if statement that checks if the guess is in the word.
+
 secret_word = "apple"
 
 if guess in secret_word:
-
-# In the body of the if statement, print a message saying: 
-# "Good guess! {guess} is in the word.".
     print(f"Good guess! '{guess}' is in the word.")
-
-# Create an else block that prints a message saying:
-# "Sorry, {guess} is not in the word. Try again."
 else:
     print(f"Sorry, '{guess}' is not in the word. Try again.")
 
 #%%
 
-# Define a function. pass in the guess as a parameter for the function.
+# Defines a function that passes in a letter as a parameter for the function.
+
 def check_guess(guessed_letter):
 
-# Convert the guess into lower case.
+    # Converts the letter into lower case.
+
     guessed_letter = guessed_letter.lower()
     
     if guessed_letter in secret_word:
@@ -44,17 +36,19 @@ def check_guess(guessed_letter):
     else:
         print(f"Sorry, '{guessed_letter}' is not in the word. Try again.")
 
-# Define a function called ask_for_input.
+# Defines a function called ask_for_input.
+
 def ask_for_input():
 
     while True:
         guessed_letter = input("Guess a letter: ")
-        if len(guessed_letter) == 1 and guessed_letter.isalpha():
+        if len(guessed_letter) == 1 or guessed_letter.isalpha():
             break
         else:
-            print("Invalid letter. Please, enter a single alphabetical character.")
+            print("Invalid letter. Please, enter a single alphabetical character.") 
 
-# Outside the while loop, but within this function, call the check_guess function to check if the guess is in the word. 
-    check_guess(guessed_letter)
-# Outside the function, call the ask_for_input function to test your code.
-ask_for_input()
+    # Calls the check_guess function to check if the letter is in the word & ask_for_input function to test your code.
+
+    check_guess(guessed_letter) 
+ask_for_input() 
+
