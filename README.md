@@ -48,9 +48,9 @@ Asks the user to input a letter, if the letter is not in the secret word, the us
 ### Installation Instructions
 
 To run the Hangman game, follow these steps:
-1. Clone the repository to your local machine: __git clone https://github.com/54F-A/hangman352.git__
-2. Navigate to the project directory: __cd hangman352__
-3. Run the file to play the game: python milestone_5.py
+1. Clone the repository to your local machine: `__git clone https://github.com/54F-A/hangman352.git__`
+2. Navigate to the project directory: `__cd hangman352__`
+3. Run the file to play the game: `python hangman_game.py`
 
 ---
 
